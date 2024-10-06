@@ -72,12 +72,47 @@ public class Ejercicio05 {
 			// Le mostramos al usuario el siguiente orden: num2 > num3 > num1
 			System.out.println(num2 + " > " + num3 + " > " + num1);
 			
-		// Si todo falla ejecutamos lo siguiente
-		} else {
+		// Comprobamos si num1 es mayor que num2 y num2 y num3 son iguales
+		} else if (num1 > num2 && num2 == num3) {
 			
-			// La única opcion restante es que dos numeros o todos sean iguales por lo que le mostramos al usuario esa posibilidad
-			System.out.println("Dos números o todos son iguales por lo que no se pueden ordenar");
+			// Le mostramos al usuario el siguiente orden: num1 > num2 = num3
+			System.out.println(num1 + " > " + num2 + " = " + num3);
 			
+		// Comprobamos si num2 y num3 son iguales y si num2 es mayor a num1
+		} else if (num2 == num3 && num2 > num1) {
+			
+			// Se lo mostramos al usuario
+			System.out.println(num2 + " = " + num3 + " > " + num1);
+			
+		// Comprobamos si num2 es mayor a num1 y si num1 y num3 son iguales
+		} else if (num2 > num1 && num1 == num3) {
+		
+			// Se lo mostramos al usuario
+			System.out.println(num2 + " > " + num1 + " = " + num3);
+			
+		// Comprobamos si num1 y num3 son iguales y si num1 es mayor a num2
+		} else if (num1 == num3 && num1 > num2) {
+			
+			// Se lo mostramos al usuario
+			System.out.println(num1 + " = " + num3 + " > " + num2);
+		
+		// Comprobamos si num3 es mayor a num2 y si num2 y num1 son iguales
+		} else if (num3 > num2 && num2 == num1) {
+			
+			// Se lo mostramos al usuario
+			System.out.println(num3 + " > " + num1 + " = " + num2);
+			
+		// Comprobamos si num1 y num2 son iguales y si num1 es mayor a num3
+		} else if (num1 == num2 && num1 > num3) {
+			
+			// Se lo mostramos al usuario
+			System.out.println(num1 + " = " + num2 + " > " + num3);
+			
+		// Comprobamos si todos los numeros son iguales
+		} else if (num1 == num2 && num1 == num3) {
+			
+			// Se lo mostramos al usuario
+			System.out.println(num1 + " = " + num2 + " = " + num3);			
 		}
 		
 		// Cerramos el scanner
