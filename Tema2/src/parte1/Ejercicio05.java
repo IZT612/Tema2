@@ -90,6 +90,10 @@ public class Ejercicio05 {
 			// Se lo mostramos al usuario
 			System.out.println(num2 + " > " + num1 + " = " + num3);
 			
+		} else if (num1 == num3 && num1 > num2) {
+			
+			System.out.println(num1 + " = " + num3 + " > " + num2);
+			
 		// Comprobamos si num1 y num3 son iguales y si num1 es mayor a num2
 		} else if (num1 == num3 && num1 > num2) {
 			
