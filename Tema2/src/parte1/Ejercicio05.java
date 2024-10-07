@@ -36,44 +36,8 @@ public class Ejercicio05 {
 		// Introducimos el valor recibido en la variable num3
 		num3 = sc.nextInt();
 		
-		// Comprobamos si el num1 es mayor al num2 y si num2 es mayor a num3
-		if (num1 > num2 && num2 > num3) {
-			
-			// Le mostramos al usuario el siguiente orden: num1 > num2 > num3
-			System.out.println(num1 + " > " + num2 + " > " + num3);
-			
-		// Comprobamos si el num1 es mayor al num3 y si num3 es mayor a num2
-		} else if (num1 > num2 && num3 > num2) {
-			
-			// Le mostramos al usuario el siguiente orden: num1 > num3 > num2
-			System.out.println(num1 + " > " + num3 + " > " + num2);
-			
-		// Comprobamos si el num3 es mayor al num2 y si num2 es mayor a num1
-		} else if (num3 > num2 && num2 > num1) {
-			
-			// Le mostramos al usuario el siguiente orden: num3 > num2 > num1
-			System.out.println(num3 + " > " + num2 + " > " + num1);
-			
-		// Comprobamos si el num3 es mayor al num2 y si num1 es mayor a num2
-		} else if (num3 > num2 && num1 > num2) {
-			
-			// Le mostramos al usuario el siguiente orden: num3 > num1 > num2
-			System.out.println(num3 + " > " + num1 + " > " + num2);
-			
-		// Comprobamos si el num2 es mayor al num1 y si num1 es mayor a num3
-		} else if (num2 > num1 && num1 > num3) {
-			
-			// Le mostramos al usuario el siguiente orden: num2 > num1 > num3
-			System.out.println(num2 + " > " + num1 + " > " + num3);
-			
-		// Comprobamos si el num1 es mayor al num3 y si num3 es mayor a num
-		} else if (num2 > num3 && num3 > num1) {
-			
-			// Le mostramos al usuario el siguiente orden: num2 > num3 > num1
-			System.out.println(num2 + " > " + num3 + " > " + num1);
-			
 		// Comprobamos si num1 es mayor que num2 y num2 y num3 son iguales
-		} else if (num1 > num2 && num2 == num3) {
+		if (num1 > num2 && num2 == num3) {
 			
 			// Le mostramos al usuario el siguiente orden: num1 > num2 = num3
 			System.out.println(num1 + " > " + num2 + " = " + num3);
@@ -118,6 +82,44 @@ public class Ejercicio05 {
 			// Se lo mostramos al usuario
 			System.out.println(num1 + " = " + num2 + " = " + num3);			
 		}
+		
+		// Comprobamos si el num1 es mayor al num2 y si num2 es mayor a num3
+		else if (num1 > num2 && num2 > num3) {
+			
+			// Le mostramos al usuario el siguiente orden: num1 > num2 > num3
+			System.out.println(num1 + " > " + num2 + " > " + num3);
+			
+		// Comprobamos si el num1 es mayor al num3 y si num3 es mayor a num2
+		} else if (num1 > num3 && num3 > num2) {
+			
+			// Le mostramos al usuario el siguiente orden: num1 > num3 > num2
+			System.out.println(num1 + " > " + num3 + " > " + num2);
+			
+		// Comprobamos si el num3 es mayor al num2 y si num2 es mayor a num1
+		} else if (num3 > num2 && num2 > num1) {
+			
+			// Le mostramos al usuario el siguiente orden: num3 > num2 > num1
+			System.out.println(num3 + " > " + num2 + " > " + num1);
+			
+		// Comprobamos si el num3 es mayor al num2 y si num1 es mayor a num2
+		} else if (num3 > num2 && num1 > num2) {
+			
+			// Le mostramos al usuario el siguiente orden: num3 > num1 > num2
+			System.out.println(num3 + " > " + num1 + " > " + num2);
+			
+		// Comprobamos si el num2 es mayor al num1 y si num1 es mayor a num3
+		} else if (num2 > num1 && num1 > num3) {
+			
+			// Le mostramos al usuario el siguiente orden: num2 > num1 > num3
+			System.out.println(num2 + " > " + num1 + " > " + num3);
+			
+		// Comprobamos si el num1 es mayor al num3 y si num3 es mayor a num
+		} else if (num2 > num3 && num3 > num1) {
+			
+			// Le mostramos al usuario el siguiente orden: num2 > num3 > num1
+			System.out.println(num2 + " > " + num3 + " > " + num1);
+			
+		} 
 		
 		// Cerramos el scanner
 		sc.close();
