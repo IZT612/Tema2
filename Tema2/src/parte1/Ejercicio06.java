@@ -19,10 +19,10 @@ public class Ejercicio06 {
 		int valorC;
 		
 		// Creamos la variable donde guardaremos el resultado tras seguir la suma en la ecuación
-		double resultadoPositivo;
+		double resultado1;
 		
 		// Creamos la variable donde guardaremos el resultado tras seguir la resta en la ecuación
-		double resultadoNegativo;
+		double resultado2;
 		
 		// Le pedimos al usuario que introduzca el valor de "a"
 		System.out.println("Introduzca el valor de 'a' para calcular x");
@@ -48,26 +48,40 @@ public class Ejercicio06 {
 			// En caso de ser así, no se podrá completar la ecuación por lo que se lo notificamos al usuario
 			System.out.println("Se ha encontrado un error durante la ecuación: No se puede hacer la raíz cuadrada de un número negativo");
 			
-		// Si se puede continuar, verificamos ahora si "a" es igual a 0, ya que en ese caso ni si quiera es una ecuación de segundo grado, además en la ecuación se tendrá que dividir entre 0, cosa que no es posible
+		// Si se puede continuar, verificamos ahora si "a" es igual a 0, ya que en ese caso puede ser una ecuación de primer grado o no ser una ecuación si quiera
 		} else if (valorA == 0) {
 			
-			// Se lo notificamos al usuario, justificando que no sería una ecuación de segundo grado
-			System.out.println("Se ha encontrado un error durante la ecuación: 'a' no puede ser 0, ya que si es el caso no es una ecuación de segundo grado, además de que no se puede dividir entre 0");
+			// Si el valor de b también es 0, solo quedaría c, que es un número sin más
+			if (valorB == 0) {
+				
+				// Notificamos al usuario que ni si quiera es una ecuación
+				System.out.println("Esto ni si quiera es una ecuación, es solo... un número... el " + valorC + "...");
+				
+				// Si b no es 0, es una ecuación de primer grado
+			} else {
+				
+				// Calculamos el resultado en esta ecuación de primer grado
+				resultado1 = -valorC / valorB;
+				
+				// Se lo notificamos al usuario, justificando que no sería una ecuación de segundo grado
+				System.out.println("Esto ni si quiera es una ecuación de segundo grado, sin embargo el resultado es: x = " + resultado1);
+				
+			}
 			
-		// En caso de no haber ningun error, podemos continuar con la ecuación
+		// Si no hay anomalías, calculamos todo de forma normal
 		} else {
 			
 			// Calculamos la ecuación siguiendo la suma y lo introducimos en la variable resultadoPositivo
-			resultadoPositivo = ((-valorB + Math.sqrt(valorB * valorB - 4 * valorA * valorC )) / (2 * valorA));
+			resultado1 = ((-valorB + Math.sqrt(valorB * valorB - 4 * valorA * valorC )) / (2 * valorA));
 			
 			// Calculamos la ecuación siguiendo la resta y lo introducimos en la variable resultadoNegativo	
-			resultadoNegativo = ((-valorB - Math.sqrt(valorB * valorB - 4 * valorA * valorC )) / (2 * valorA));
+			resultado2 = ((-valorB - Math.sqrt(valorB * valorB - 4 * valorA * valorC )) / (2 * valorA));
 			
 			// Le mostramos al usuario el resultado obtenido siguiendo la suma como x1
-			System.out.println("x1 = " + resultadoPositivo);
+			System.out.println("x1 = " + resultado1);
 			
 			// Le mostramos al usuario el resultado obtenido siguiendo la resta como x2
-			System.out.println("x2 = " + resultadoNegativo);
+			System.out.println("x2 = " + resultado2);
 			
 		}
 		
