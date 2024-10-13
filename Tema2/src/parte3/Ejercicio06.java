@@ -5,6 +5,50 @@ import java.util.Scanner;
 public class Ejercicio06 {
 
 	public static void main(String[] args) {
+		
+		// Se necesitan minimo 6 casos, 3 para poner las horas, minutos y segundos erroneos, y los otros 3 casos posibles si los datos son correctos
+		
+		/* Prueba 1 
+		 * 
+		 * Valores de entrada ---> -2 horas  2 minutos 2 segundos
+		 * Respuesta esperada ---> "Las horas introducidas son erróneas"
+		 * Respuesta obtenida ---> "Las horas introducidas son erróneas"
+		 */
+		
+		/* Prueba 2 
+		 * 
+		 * Valores de entrada ---> 2 horas  -2 minutos 2 segundos
+		 * Respuesta esperada ---> "Los minutos introducidos son erróneos"
+		 * Respuesta obtenida ---> "Los minutos introducidos son erróneos"
+		 */
+		
+		/* Prueba 3
+		 * 
+		 * Valores de entrada ---> 2 horas  2 minutos -2 segundos
+		 * Respuesta esperada ---> "Los minutos introducidos son erróneos"
+		 * Respuesta obtenida ---> "Los minutos introducidos son erróneos"
+		 */
+		
+		/* Prueba 4
+		 * 
+		 * Valores de entrada ---> 2 horas  2 minutos 2 segundos
+		 * Respuesta esperada ---> "Las horas, minutos y segundos quedan así: 2 horas, 2 minutos y 3 segundos"
+		 * Respuesta obtenida ---> "Las horas, minutos y segundos quedan así: 2 horas, 2 minutos y 3 segundos"
+		 */
+		
+		/* Prueba 5
+		 * 
+		 * Valores de entrada ---> 2 horas  2 minutos 59 segundos
+		 * Respuesta esperada ---> "Las horas, minutos y segundos quedan así: 2 horas, 3 minutos y 0 segundos"
+		 * Respuesta obtenida ---> "Las horas, minutos y segundos quedan así: 2 horas, 3 minutos y 0 segundos"
+		 */
+		
+		/* Prueba 6
+		 * 
+		 * Valores de entrada ---> 2 horas  59 minutos 59 segundos
+		 * Respuesta esperada ---> "Las horas, minutos y segundos quedan así: 3 horas, 0 minutos y 0 segundos"
+		 * Respuesta obtenida ---> "Las horas, minutos y segundos quedan así: 3 horas, 0 minutos y 0 segundos"
+		 */
 
 		// Creamos el scanner
 		Scanner sc = new Scanner(System.in);
