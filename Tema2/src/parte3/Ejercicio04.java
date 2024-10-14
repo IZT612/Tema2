@@ -127,8 +127,14 @@ public class Ejercicio04 {
 		
 		};
 		
+		if (numero < 0 || numero > 99) {
+			
+			System.out.println("El número no está entre 0 y 99");
+			
+		}
+		
 		// Y ahora hacemos ifs y else ifs para cubrir tambien todas las posibles excepciones, como por ejemplo si es 0, es una excepcion ya que no guardamos el 0 como una unidad posible
-		if (numero == 0) {
+		else if (numero == 0) {
 				
 				System.out.println("El número es cero");
 				
