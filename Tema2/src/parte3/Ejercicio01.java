@@ -127,7 +127,7 @@ public class Ejercicio01 {
 			if ((numero / 1000) == (numero % 10) && ((numero - ((numero / 1000) * 1000)) / 100) == ((numero - ((numero / 100) * 100)) / 10)) {
 				
 				// Si es el caso, será capicúa, se lo notificamos al usuario
-				System.out.println("El número introducido: " + numero + " es capciúa");
+				System.out.println("El número introducido: " + numero + " es capicúa");
 				
 			// Si no, el número no es capicúa
 			} else {
