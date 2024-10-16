@@ -16,10 +16,10 @@ public class Ejercicio05 {
 		int suma = 0;
 		
 		// Creamos la variable "contadorTotal" donde guardaremos la cantidad de alumnos que se han introducido
-		double contadorTotal = 0;
+		int contadorTotal = 0;
 		
 		// Creamos la variable "contadorMayores" donde guardaremos la cantidad de alumnos que son mayores de edad
-		double contadorMayores = 0;
+		int contadorMayores = 0;
 		
 		// Le pedimos al usuario que introduzca la edad del alumno.
 		System.out.println("Introduzca la edad del alumno. Introduzca un número negativo para finalizar el programa");
@@ -60,7 +60,7 @@ public class Ejercicio05 {
 			System.out.println("La suma de todas las edades es " + suma);
 			
 			// Mostramos la media de todas las edades
-			System.out.println("La media de las edades es " + (suma / contadorTotal));
+			System.out.println("La media de las edades es " +((double) suma /  contadorTotal));
 			
 			// Mostramos la cantidad total de alumnos
 			System.out.println("La cantidad de alumnos totales es de: " + contadorTotal);
