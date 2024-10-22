@@ -1,0 +1,13 @@
+package parte6;
+
+import java.util.Scanner;
+
+public class Ejercicio03 {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}
