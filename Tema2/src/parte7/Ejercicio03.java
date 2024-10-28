@@ -22,17 +22,29 @@ public class Ejercicio03 {
 		// Creamos la variable booleana "hayMcd" donde guardaremos si se ha encontrado máximo comun divisor
 		boolean hayMcd = false;
 		
-		// Le pedimos al usuario el primer numero
-		System.out.println("Introduzca el primer número");
+		// Creamos un bucle do-while para que introduzca un valor correcto
+		do {
 		
-		// Lo guardamos en la variable "numeroA"
-		numeroA = sc.nextInt();
+			// Le pedimos al usuario el primer numero
+			System.out.println("Introduzca el primer número");
+			
+			// Lo guardamos en la variable "numeroA"
+			numeroA = sc.nextInt();
 		
-		// Le pedimos al usuario el primer numero
-		System.out.println("Introduzca ahora el segundo número");
+		// Se repite mientras el número sea 0
+		} while (numeroA == 0);
 		
-		// Lo guardamos en la variable "numeroB"
-		numeroB = sc.nextInt();
+		// Creamos un bucle do-while para que introduzca un valor correcto
+		do {
+			
+			// Le pedimos al usuario el primer numero
+			System.out.println("Introduzca ahora el segundo número");
+			
+			// Lo guardamos en la variable "numeroB"
+			numeroB = sc.nextInt();
+			
+		// Se repite mientras el número sea 0
+		} while (numeroB == 0);
 		
 		// Si el número A es menor al número B lo ponemos como menor
 		if (numeroA < numeroB) {
@@ -44,7 +56,7 @@ public class Ejercicio03 {
 			
 			menor = numeroB;
 			
-		// Si no es el caso son iguales, solo hay un posible máximo comun divisor
+		// Si no es el caso, son iguales, solo hay un posible máximo comun divisor
 		} else {
 			
 			menor = 0;
@@ -74,7 +86,7 @@ public class Ejercicio03 {
 		
 		// Cerramos el scanner
 		sc.close();
-		
+
 	}
 
 }
